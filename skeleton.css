@@ -441,7 +441,7 @@ hr {
   }  
   
 
-/* Stacked Cards
+/* Stacked Cards AR Insights
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 /* Desktop layout */
@@ -474,6 +474,44 @@ hr {
 /* Mobile stacked cards */
 @media (max-width: 768px) {
   .insights-table {
+    grid-template-columns: 1fr;
+  }
+}
+
+
+/* Stacked Cards Personas
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.persona-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-top: 30px;
+}
+
+.persona-card {
+  border: 1px solid #eee;
+  padding: 20px;
+  border-radius: 8px;
+  background: #fff;
+  text-align: center;
+}
+
+.persona-card img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 6px;
+  margin-bottom: 10px;
+}
+
+.persona-card h5 {
+  margin: 10px 0 5px;
+  color: #0077cc;
+  font-weight: 600;
+}
+
+@media (max-width: 768px) {
+  .persona-grid {
     grid-template-columns: 1fr;
   }
 }
