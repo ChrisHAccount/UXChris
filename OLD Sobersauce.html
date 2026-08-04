@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Sobersauce | Chris H</title>
+  <meta name="Sobersauce | Chris H" content="">
+
+    <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link href='//fonts.googleapis.com/css?family=Raleway:400,300,600' rel='stylesheet' type='text/css'>
+
+    <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
+
+
+    <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+    <link rel="icon" type="image/png" href="./images/favicon.ico">
+
+</head>
+
+<body>
+    <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+
+    <div class="container">
+
+        <!-- RETURN HOME -->
+        <div class="row">
+            <div class="twelve columns" style="margin-top: 5%">
+                <h4><a href="index.html">Home</a></h4>
+            </div>
+
+        <!-- TITLE -->
+        <div class="row">
+            <div class="twelve columns" style="margin-top: 5%">
+                <h2>Redesign of the Sobersauce Mobile Experience</h2>
+            </div>
+
+
+
+            <!-- HEADER IMAGE -->
+            <div class="row">
+                <div class="twelve columns">
+                    <img class="responsive" src="./images/Sobersauce-1-hero-image.jpg" alt="Sober Sauce Header Image">
+                </div>
+            </div>
+
+
+
+            <!-- PROBLEM STATEMENT -->
+            <div class="row">
+                <div class="twelve columns">
+                    <h3 id="sobersaucePage">Problem Statement</h3>
+                    <p>Sobersauce is an eCommerce refreshment company that sells and delivers a range of low-alcohol or alcohol-free beverages. However...</p>
+                    <h2>...analytics data revealed a high cart abandonment rate, negatively impacting sales.</h2>
+                </div>
+            </div>
+            <hr style="width:50%">
+
+
+
+            <!-- PROPOSED SOLUTIONS -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h3 id="sobersaucePage">Proposed Solutions</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <h4>1. Clarify the purpose of each webpage</h4>
+                    <li>Improve way-finding by using hierarchy</li>
+                    <li>Categorise products to improve findability</li>
+                    <li>Implement ‘sort’ and ‘filter’ functionality</li>
+                </div>
+                <div class="six columns">
+                    <h4>2. Streamline the purchase process</h4>
+                    <li>Remove duplicate data entry at check-out</li>
+                    <li>Minimise navigation by using popovers</li>
+                    <li>Identify progress using breadcrumb trails</li>
+                </div>
+            </div>
+            <hr style="width:50%">
+
+
+
+            <!-- RESEARCH METHOD 1 AND INSIGHTS -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h3 id="sobersaucePage">Research Method 1: Comparing Existing Website Structure and Analytics Data</h3>
+                    <p>
+                    <h2>Low findability resulted in high interaction costs.</h2>
+                    </p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    The existing website structure did not categorise products to make them easily findable. 19 separate product list pages had conflicting titles, e.g.:<br>
+                    <li>0.0%ABV Alcohol Free Beers</li>
+                    <li>Alcohol Free Dark Beers</li>
+                    <li>Alcohol Free IPAs</li>
+                    <li>Non-Alcohol Pale Ales</li>
+                    <p>Low findability inferred extra user navigation steps, resulting in high interaction costs. Analytics data observed a high drop-off rate.</p>
+                </div>
+            </div>
+                <div class="twelve columns">
+                    <img class="responsive" src="./images/sobersauceExistingStructure.jpg"
+                        alt="Site Structure Diagram of the Sober Sauce Website">
+                    <p></p>
+                </div>
+            </div>
+
+
+
+
+
+            <!-- RESEARCH METHOD 2 AND INSIGHTS -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h3 id="sobersaucePage">Research Method 2: Journey Mapping</h3>
+                    <p>
+                    <h2>Feelings of impatience and frustration were experienced at check-out.</p>
+                    </h2>
+                </div>
+            </div>
+
+            <div class="twelve columns">
+                <p>User interviews and walkthroughs revealed pain points in the browsing and checkout processes. Users reported feeling confused, lost, or irritated by the browsing process, corroborating earlier research data.</p>
+                Key opportunities identified:
+                <li>Combine product categories to reduce conflicts. Use 'sort' and 'filter' functionalities for findability.</li>
+                <li>Remove duplicate check-out information requests. Combine steps where appropriate.</li>
+                <li>Signpost product information. Show when requested.</li>
+                <li>Enable users to add products to baskets with minimal further page navigation steps.</li>
+            </div>
+            
+            <div class="row">
+                <div class="twelve columns">
+                    <img class="responsive" src="./images/Sobersauce-3-journey-mapping.png" alt="Journey Mapping Task Document">
+                    <p></p>
+                </div>
+                </div>
+            <hr style="width:50%">
+
+
+            <!-- SITE STRUCTURE REDESIGN -->
+
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h3 id="sobersaucePage">Redesigned Site Structure</h3>
+                    <p>
+                    <h2>A redesigned site structure minimised steps within the purchase task flow.</h2>
+                    </p>
+                </div>
+            </div>
+
+            <div class="twelve columns">
+                <p>The 19 product list pages were condensed into one ‘Shop Beers’ experience: a one-stop shop for searching, browsing, and adding beers to the user’s cart. The checkout process was split into two categories: “Delivery Details” and “Review and Pay.” Duplicate data entry requests were removed.</p>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <img class="responsive" src="./images/sobersauceRedesignedStructure.jpg"
+                        alt="Site Structure Diagram of the Sober Sauce Website">
+                </div>
+                </div>
+
+
+
+
+
+            <!-- IDEATION AND WIREFRAMING -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h3 id="sobersaucePage">Ideation & Low-Fidelity Wireframing</h3>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h2>A popover contextual menu would present glanceable product information.</h2>
+                    </p>
+                    <p>The popover system would be visible when a product image was tapped. It would provide product information, a field to purchase specific quantities, and an 'add to basket' call to action.</p>
+                    <p>The homepage and ‘Shop Beers’ page were redesigned to promote popular products and implement 'sort' and 'filter' functionality.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <img class="responsive" src="./images/sobersauceRedesignSketches.png"
+                        alt="Sober Sauce Redesign Sketches">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <img class="responsive" src="./images/Sobersauce-wireframe-1-cropped.jpg" alt="Sober Sauce Wireframe 1">
+                </div>
+                <div class="six columns">
+                    <img class="responsive" src="./images/Sobersauce-wireframe-2-cropped.jpg" alt="Sober Sauce Wireframe 2">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <img class="responsive" src="./images/Sobersauce-wireframe-3-cropped.jpg" alt="Sober Sauce Wireframe 3">
+                </div>
+                <div class="six columns">
+                    <img class="responsive" src="./images/Sobersauce-wireframe-4-cropped.jpg" alt="Sober Sauce Wireframe 4">
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <img class="responsive" src="./images/Sobersauce-wireframe-5-cropped.jpg" alt="Sober Sauce Wireframe 5">
+                </div>
+                <div class="six columns">
+                    <img class="responsive" src="./images/Sobersauce-wireframe-6-cropped.jpg" alt="Sober Sauce Wireframe 6">
+                </div>
+            </div>
+
+            <hr style="width:50%">
+
+            <!-- TESTING AND FURTHER DEVELOPMENT -->
+
+            <div class="row">
+                <div class="twelve columns">
+                    <h3 id="sobersaucePage">Usability Testing</h3>
+                    <p><h2>Users stopped reporting feelings of confusion when finding products or checking out.</h2></p>
+                    <p>Usability testing with 'think-aloud' protocols revealed that users instinctively used searchability functions. Further feedback requested auto-complete search functionality, owing to 'creative naming’, which makes drink names challenging to remember.</p>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="six columns">
+                    <img class="responsive" src="./images/soberSauceUsabilityTesting.png" alt="Usability Testing">
+                </div>
+                <div class="six columns">
+                    <img class="responsive" src="./images/soberSauceUsabilityTestingArtifact.png" alt="Usability Testing Artifact">
+                </div>
+            </div>
+
+            <hr style="width:50%">
+
+
+
+
+            <!-- FINAL DESIGN HIGHLIGHTS AND LESSONS LEARNED -->
+
+            <div class="row">
+                <div class="twelve columns" style="margin-top: 5%">
+                    <h3 id="sobersaucePage">Final Design Highlights and Lessons Learned</h3>
+                </div>
+
+                <div class="row">
+                    <div class="twelve columns">
+                        <h3>Homepage and 'Shop Beers'</h3>
+                        <li>A new 'Trending Beers' section on the homepage provides quick access to popular products.</li>                       </li>
+                        <li>Searchability improved by including ‘auto-complete’ search functionality.</li>
+                        <li>‘Sort’ and ‘Filter’ drop-down menus enable use of product categorisation properties.</li>
+                        <li>Branding guidelines required minimal tweaks to remain in line with WCAG-AA guidelines. Background colour contrast and text size were the main factors.</li>
+                        <p></p>
+                        <h3>Product Pages</h3>
+                        <li>Popover product information provides glanceable product information without requiring navigation from the results screen.</li>
+                        <li>Branding guidelines adjusted marginally to maintain compliance with WCAG-AA guidelines.</li>
+                        <p></p>
+                        <h3>Review, Payment, and Delivery Screens</h3>
+                        <li>Unnecessary webpages removed</li>
+                        <li>Input fields are grouped to reduce the need for data entry duplication.</li>
+                        <li>A breadcrumb trail is introduced to demonstrate checkout progress.</li>
+                        <p></p>
+                    </div>
+                    <div class="twelve columns">
+                        <img class="responsive" src="./images/Sobersauce-final-design-images.jpg"
+                            alt="Final design screens">
+                        <p></p>
+                    </div>
+                </div>
+
+            <div class="row">
+                <div class="twelve columns">
+                    <img class="responsive" src="./images/soberSauceXDPrototype.png"
+                        alt="A screenshot of the Sober Sauce redesign in Adobe XD">
+                </div><p></p>
+
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="twelve columns">
+            <hr width="500>" 
+            <p></p>
+            <br>
+            <p></p>
+            <a href="#top"><h4>Back to top of page</h4></a>
+        </div>
+    </div>
+
+
+
+
+    <!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+
+</html>

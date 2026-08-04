@@ -141,9 +141,6 @@ h3 { font-size: 3.0rem; line-height: 1.3;  letter-spacing: -.1rem; } */
 h1 { font-size: 2.4rem; line-height: 1.35; letter-spacing: -.08rem; font-weight: bold; }
 h2 { font-size: 1.8rem; line-height: 1.5;  letter-spacing: -.05rem; font-weight: bold; }
 h3 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; font-weight: bold; }
-#indexPage { color: 000000; }
-#arPage { color:#317477; }
-#sobersaucePage { color:#D3376B; }
 h4 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; font-weight: bold;}
 
 /* Larger than phablet */
@@ -159,13 +156,33 @@ h4 { font-size: 1.5rem; line-height: 1.6;  letter-spacing: 0; font-weight: bold;
 p {
   margin-top: 0; }
 
+/* Lead Paragraph formatting */
+.lead {
+  color: #444;
+  margin-bottom: 1.5rem;
+  font-weight: bold;
+}
+
+
 
 /* Links
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-a {
-  color: #1EAEDB; }
-a:hover {
-  color: #0FA0CE; }
+  /* Accent colour */
+  a {
+    color: #0077cc;
+  }
+  
+  a:hover {
+    color: #005fa3;
+  }
+  
+  h3 {
+    color: #0077cc;
+  }
+  
+  nav a:hover {
+    color: #0077cc;
+  }
 
 
 /* Buttons
@@ -388,6 +405,41 @@ hr {
   border-width: 0;
   border-top: 1px solid #E1E1E1; }
 
+  .card-logo {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto 1rem auto;
+  }  
+
+  .project-card {
+    border: 1px solid #eee;
+    transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  }
+  
+  .project-card:hover {
+    border-color: #0077cc;
+    box-shadow: 0 6px 12px rgba(0,0,0,0.08);
+  }
+
+  .card-link {
+    text-decoration: none;
+    color: inherit;
+    display: block;
+  }
+
+  .card-link:hover .project-card {
+    border-color: #0077cc;
+  }  
+
+  .card-cta {
+    color: #0077cc;
+    font-weight: 500;
+    display: inline-block;
+    margin-top: 10px;
+  }  
+  
 
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */

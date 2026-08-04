@@ -425,3 +425,12 @@ td,
 th {
   padding: 0;
 }
+
+/* ADDITIONAL */
+
+.card-thumb {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 6px;
+}
