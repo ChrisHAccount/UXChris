@@ -525,6 +525,28 @@ hr {
 }
 
 
+/* Youtube Video Responsive Resizing
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+  height: 0;
+  overflow: hidden;
+  border-radius: 8px; /* optional */
+  margin: 20px 0; /* spacing */
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+
+
 /* Clearing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
