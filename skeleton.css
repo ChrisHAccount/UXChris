@@ -409,6 +409,60 @@ form {
 
 }
 
+/* Header
+-------------------------------------------------- */
+
+/* Header container */
+.site-header {
+  width: 100%;
+  padding: 1.2rem 2rem;
+  border-bottom: 1px solid #e5e5e5;
+  background: #ffffff;
+}
+
+/* Inner wrapper for alignment */
+.header-inner {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Title styling */
+.site-title {
+  font-size: 2.4rem;
+  line-height: 1.35;
+  letter-spacing: -.08rem;
+  font-weight: bold; 
+  /* font-weight: 600; */
+  margin: 0;
+  color: #222;
+}
+
+/* Tagline styling */
+.site-tagline {
+  /* font-size: 0.95rem; */
+  margin: 0.3rem 0 0;
+  color: #555;
+  letter-spacing: 0.5px;
+  font-size: 1.5rem;
+  line-height: 1.6;
+  font-weight: 400;
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* Mobile adjustments */
+@media (max-width: 600px) {
+  .site-header {
+    padding: 1rem 1.2rem;
+  }
+
+  .site-title {
+    font-size: 1.2rem;
+  }
+
+  .site-tagline {
+    font-size: 0.9rem;
+  }
+}
 
 /* Navbar
 -------------------------------------------------- */
