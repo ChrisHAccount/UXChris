@@ -404,6 +404,158 @@ form {
   }
 }
 
+
+/* Navbar
+-------------------------------------------------- */
+/* Base navbar layout */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+
+/* desktop menu */
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+/* hamburger hidden on desktop */
+.hamburger {
+  display: none;
+  font-size: 28px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  /* menu becomes dropdown below navbar */
+  .nav-links {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    max-height: 300px;
+  }
+
+  .nav-links li {
+    padding: 8px 0;
+  }
+}
+
+@media (max-width: 768px) {
+  .nav-links {
+    max-height: 0;
+    overflow: hidden;
+    opacity: 0;
+    transform: translateY(-5px);
+    transition: 
+      max-height 0.3s ease,
+      opacity 0.25s ease,
+      transform 0.25s ease;
+  }
+
+  .nav-links.show {
+    max-height: 300px;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.nav-links li {
+  border-bottom: 1px solid #eee;
+}
+
+.hamburger {
+  color: #0077cc;
+  background: #0077cc;
+}
+
+/* Base hamburger styling */
+.hamburger {
+  display: none; /* shown only on mobile */
+  width: 30px;
+  height: 22px;
+  position: relative;
+  border: none;
+  background: none;
+  cursor: pointer;
+  padding: 0;
+}
+
+.hamburger span {
+  display: block;            /* ← critical */
+  width: 100%;               /* ← critical */
+  height: 3px;               /* ← critical */
+  background: #0077cc;       /* your accent colour */
+  position: absolute;
+  left: 0;
+  transition: all 0.3s ease;
+}
+
+
+/* Bar positions */
+.hamburger span:nth-child(1) {
+  top: 0;
+}
+.hamburger span:nth-child(2) {
+  top: 9px;
+}
+.hamburger span:nth-child(3) {
+  top: 18px;
+}
+
+/* When menu is open */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(45deg);
+  top: 9px;
+}
+
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger.active span:nth-child(3) {
+  transform: rotate(-45deg);
+  top: 9px;
+}
+
+
+@media (max-width: 768px) {
+  .hamburger {
+    display: block;
+  }
+
+  .nav-links {
+    display: block;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+  }
+
+  .nav-links.show {
+    max-height: 300px;
+  }
+}
+
+
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
