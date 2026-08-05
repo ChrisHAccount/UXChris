@@ -20,7 +20,7 @@
       <p class="site-tagline">Product discovery · Accessibility · Human‑centred interaction</p>
     </div>
   </header>
-  
+
   <!-- NAV BAR -->
   <nav class="navbar">
     <div class="nav-brand"></div>
@@ -90,7 +90,21 @@
     <div class="twelve columns">
       <h3>User Journey</h3>
       <p>User behaviour across the purchase journey was documented (yellow) alongside the pain points they experienced (red). Potential solutions were mapped retrospectively (green).</p>
-      <img class="u-max-full-width" src="./images/Sobersauce-3-journey-mapping.png" alt="User Journey Map">
+      <!-- <a href="./images/Sobersauce-3-journey-mapping.png" class="journey-full">
+        <div class="journey-scroll">
+          <img src="./images/Sobersauce-3-journey-mapping.png" alt="User Journey Diagram">
+        </div> -->
+        <div class="journey-scroll">
+            <img src="./images/Sobersauce-3-journey-mapping.png" alt="User Journey Diagram" class="journey-img">
+          </div>
+          <p>Click/tap to zoom-in on the above diagram.</p>
+          <!-- Modal -->
+          <div id="journeyModal" class="journey-modal">
+            <span class="journey-close">&times;</span>
+            <img class="journey-modal-content" id="journeyModalImg">
+          </div>
+      </a>
+      
     </div>
   </div>
 
@@ -245,5 +259,6 @@
     </div>
   </div>
   <script src="js/navbar.js"></script>
+  <script src="js/imgzoom.js"></script>
 </body>
 </html>

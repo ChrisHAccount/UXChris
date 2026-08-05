@@ -614,6 +614,51 @@ form {
   }
 }
 
+/* Journey Diagrams
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+/* Scrollable container */
+.journey-scroll {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+  padding-bottom: 10px;
+}
+
+.journey-scroll img {
+  max-width: none;
+  max-width: 100%;
+  cursor: zoom-in;
+}
+
+/* Modal */
+.journey-modal {
+  display: none;
+  position: fixed;
+  z-index: 9999;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.85);
+  text-align: center;
+}
+
+.journey-modal-content {
+  max-width: 95%;
+  max-height: 90%;
+  margin-top: 5%;
+}
+
+.journey-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
 
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
