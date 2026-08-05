@@ -397,11 +397,16 @@ form {
   max-width: 100%;
 }
 
-@media (max-width: 768px) {
+.responsiveHomepagePhoto {
+  max-width: 100%;
+}
+
+@media (max-width: 849px) {
   .responsiveHomepagePhoto {
-    max-width: 250px;
+    max-width: 100%;
     display: none;
   }
+
 }
 
 
