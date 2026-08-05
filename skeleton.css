@@ -412,33 +412,36 @@ form {
 /* Header
 -------------------------------------------------- */
 
-/* Header container */
 .site-header {
   width: 100%;
   padding: 1.2rem 2rem;
   border-bottom: 1px solid #e5e5e5;
   background: #ffffff;
+  margin-bottom: 2.5rem;
 }
 
-/* Inner wrapper for alignment */
 .header-inner {
   max-width: 1200px;
   margin: 0 auto;
 }
 
-/* Title styling */
+/* Top row: title + hamburger */
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
 .site-title {
   font-size: 2.4rem;
   line-height: 1.35;
   letter-spacing: -.08rem;
-  font-weight: bold; 
+  font-weight: bold;
   margin: 0;
   color: #222;
 }
 
-/* Tagline styling */
 .site-tagline {
-  /* font-size: 0.95rem; */
   margin: 0.3rem 0 0;
   color: #555;
   letter-spacing: 0.5px;
@@ -463,88 +466,11 @@ form {
   }
 }
 
-/* Navbar
+/* Hamburger
 -------------------------------------------------- */
-/* Base navbar layout */
-.navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 15px 0;
-}
-
-/* desktop menu */
-.nav-links {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
-/* hamburger hidden on desktop */
-.hamburger {
-  display: none;
-  font-size: 28px;
-  background: none;
-  border: none;
-  cursor: pointer;
-}
-
-/* mobile */
-@media (max-width: 768px) {
-  .hamburger {
-    display: block;
-  }
-
-  /* menu becomes dropdown below navbar */
-  .nav-links {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
-    margin: 0;
-    padding: 0;
-  }
-
-  .nav-links.show {
-    max-height: 300px;
-    display: block;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-  }
-
-  .nav-links li {
-    padding: 8px 0;
-  }
-}
-
-@media (max-width: 768px) {
-  .nav-links {
-    max-height: 0;
-    overflow: hidden;
-    opacity: 0;
-    transform: translateY(-5px);
-    transition: 
-      max-height 0.3s ease,
-      opacity 0.25s ease,
-      transform 0.25s ease;
-  }
-
-  .nav-links.show {
-    max-height: 300px;
-    opacity: 1;
-    transform: translateY(0);
-    border-bottom: 1px solid #eee;
-  }
-}
 
 .hamburger {
-  color: #0077cc;
-  background: #0077cc;
-}
-
-/* Base hamburger styling */
-.hamburger {
-  display: none; /* shown only on mobile */
+  display: none; /* desktop hidden */
   width: 30px;
   height: 22px;
   position: relative;
@@ -555,28 +481,20 @@ form {
 }
 
 .hamburger span {
-  display: block;          
-  width: 100%;              
-  height: 3px;             
-  background: #0077cc;      
+  display: block;
+  width: 100%;
+  height: 3px;
+  background: #0077cc;
   position: absolute;
   left: 0;
   transition: all 0.3s ease;
 }
 
+.hamburger span:nth-child(1) { top: 0; }
+.hamburger span:nth-child(2) { top: 9px; }
+.hamburger span:nth-child(3) { top: 18px; }
 
-/* Bar positions */
-.hamburger span:nth-child(1) {
-  top: 0;
-}
-.hamburger span:nth-child(2) {
-  top: 9px;
-}
-.hamburger span:nth-child(3) {
-  top: 18px;
-}
-
-/* When menu is open */
+/* Hamburger animation */
 .hamburger.active span:nth-child(1) {
   transform: rotate(45deg);
   top: 9px;
@@ -591,26 +509,66 @@ form {
   top: 9px;
 }
 
-
+/* Show hamburger on mobile */
 @media (max-width: 768px) {
   .hamburger {
     display: block;
   }
+}
 
+/* Nav links (dropdown)
+-------------------------------------------------- */
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: none; /* hidden by default */
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+  overflow: hidden;
+}
+
+.nav-links.show {
+  display: flex;
+  animation: dropdown 0.25s ease;
+}
+
+.nav-links li {
+  padding: 0;
+}
+
+.nav-links li a {
+  color: #0077cc;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 1em; /* currently ems cause chrome bug misinterpreting rems on body element */
+  font-family: "Raleway", "HelveticaNeue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  padding: 0;
+}
+
+.nav-links li a:hover,
+.nav-links li a:focus {
+  text-decoration: underline;
+}
+
+/* Dropdown animation */
+@keyframes dropdown {
+  from { opacity: 0; transform: translateY(-5px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+/* Desktop nav */
+@media (min-width: 769px) {
   .nav-links {
-    display: block;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
-    flex-direction: column;
-    gap: 10px;
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
     margin-top: 10px;
   }
-
-  .nav-links.show {
-    max-height: 300px;
-  }
 }
+
 
 /* Journey Diagrams
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
