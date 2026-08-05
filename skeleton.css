@@ -399,7 +399,7 @@ form {
 
 @media (max-width: 768px) {
   .responsiveHomepagePhoto {
-    max-width: 100%;
+    max-width: 250px;
     display: none;
   }
 }
