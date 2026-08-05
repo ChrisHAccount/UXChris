@@ -397,6 +397,13 @@ form {
   max-width: 100%;
 }
 
+@media (max-width: 768px) {
+  .responsiveHomepagePhoto {
+    max-width: 100%;
+    display: none;
+  }
+}
+
 /* Misc
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 hr {
