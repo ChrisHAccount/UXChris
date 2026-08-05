@@ -33,7 +33,7 @@
   <div class="row">
     <div class="twelve columns">
       <h1>Sobersauce — UX Case Study</h1>
-      <p class="lead">This project demonstrates my ability to improve product findability, reduce checkout friction, and design for conversion.</p>
+      <p class="lead">This project demonstrates my ability to design for conversion by improving product findability and reducing checkout friction.</p>
       <img class="u-max-full-width" src="./images/Sobersauce-1-hero-image.jpg" alt="Sobersauce Header Image">
     </div>
   </div>
@@ -44,7 +44,7 @@
   <div class="row">
     <div class="twelve columns">
       <h3>Overview</h3>
-      <p>Sobersauce is an eCommerce refreshment company that sells and delivers a range of low‑alcohol or alcohol‑free beverages. Analytics data revealed a high cart abandonment rate, negatively impacting sales. This case study explores how improving findability, clarity, and checkout flow can reduce friction and increase conversions.</p>
+      <p>Sobersauce is an eCommerce refreshment company that sells and delivers a range of low‑ and no-alcohol beverages. Analytics data was reviewed to reveal a high cart abandonment rate on mobile, which impacted sales. An Information Architecture review was conducted alongside moderated usability testing and journey mapping to yield further insights about the problem. The site structure was then rearchitected and the UI iteratively redesigned before being subjected to further usability testing. Content such as 'trending beers' are now easier to find, product search and filtering are more intuitive, and accessibility tweaks keep the design WCAG‑AA compliant. Product Display Pages (PDP) and checkout flows have been streamlined with clearer information, fewer steps, and improved navigation.</p>
     </div>
   </div>
 
@@ -54,8 +54,7 @@
   <div class="row">
     <div class="twelve columns">
       <h3>Problem</h3>
-      <h2>Analytics data revealed a high cart abandonment rate, negatively impacting sales.</h2>
-      <p>Users struggled to find products, understand page purpose, and complete checkout without confusion or frustration.</p>
+      <h2>Analytics data revealed a high cart abandonment rate on mobile, negatively impacting sales.</h2>
     </div>
   </div>
 
@@ -66,48 +65,8 @@
     <div class="twelve columns">
       <h3>Research</h3>
       <h2>Low findability resulted in high interaction costs.</h2>
-      <p>The existing website structure included 19 separate product list pages with conflicting titles, such as:</p>
-      <ul>
-        <li>0.0% ABV Alcohol Free Beers</li>
-        <li>Alcohol Free Dark Beers</li>
-        <li>Alcohol Free IPAs</li>
-        <li>Non‑Alcohol Pale Ales</li>
-      </ul>
-      <p>This inconsistency increased navigation steps and contributed to high drop‑off rates.</p>
+      <p>The existing website structure included 19 separate product list pages with conflicting titles, such as '0.0% ABV Alcohol Free Beers' and 'Alcohol Free Dark Beers'. This inconsistency increased navigation steps and contributed to high drop‑off rates.</p>
       <img class="u-max-full-width" src="./images/sobersauceExistingStructure.jpg" alt="Existing Site Structure">
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- Insights -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Insights</h3>
-      <h2>Feelings of impatience and frustration were experienced at checkout.</h2>
-      <p>User interviews and walkthroughs revealed confusion, irritation, and difficulty locating product information. These findings aligned with analytics data.</p>
-      <p><strong>Key opportunities:</strong></p>
-      <ul>
-        <li>Combine product categories and introduce sort/filter functionality.</li>
-        <li>Remove duplicate checkout information requests.</li>
-        <li>Signpost product information clearly.</li>
-        <li>Enable adding products to basket with minimal navigation.</li>
-      </ul>
-      <img class="u-max-full-width" src="./images/Sobersauce-3-journey-mapping.png" alt="Journey Mapping">
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- Personas -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Personas</h3>
-      <p>Two primary user types emerged from interviews and analytics:</p>
-      <ul>
-        <li><strong>The Explorer</strong> — wants variety, filters, and clear comparisons.</li>
-        <li><strong>The Decider</strong> — wants quick clarity, simple checkout, and reassurance.</li>
-      </ul>
     </div>
   </div>
 
@@ -117,20 +76,38 @@
   <div class="row">
     <div class="twelve columns">
       <h3>User Journey</h3>
-      <p>Journey mapping highlighted friction at product search, comparison, checkout, and delivery options.</p>
+      <p>User behaviour across the purchase journey was documented (yellow) alongside the pain points they experienced (red). Potential solutions were mapped retrospectively (green).</p>
       <img class="u-max-full-width" src="./images/Sobersauce-3-journey-mapping.png" alt="User Journey Map">
     </div>
   </div>
 
   <hr>
 
+    <!-- Insights and Solutions -->
+    <div class="row">
+        <div class="twelve columns">
+          <h3>Insights</h3>
+          <h2>Feelings of confusion, irritation, and impatience across Product List Page (PLP), PDP, and checkout.</h2>
+          <p>Early usability testing revealed numerous pain points around difficulty in locating product information, navigation, and data input. This aligned with the analytics data.</p>
+          <p><strong>Key opportunities:</strong></p>
+          <ul>
+            <li>Combine product categories and introduce sorting/filtering functionality.</li>
+            <li>Remove duplicate data requests during the checkout process.</li>
+            <li>Improve clarity of product information on PDPs (and PLPs for supporting comparisons)</li>
+            <li>Reduce input and navigation steps during the add-to-basket process.</li>
+          </ul>
+        </div>
+      </div>
+    
+      <hr>
+
   <!-- Ideation -->
   <div class="row">
     <div class="twelve columns">
       <h3>Ideation</h3>
-      <h2>A popover contextual menu would present glanceable product information.</h2>
-      <p>The popover appears when a product image is tapped, providing product details, quantity selection, and an “add to basket” CTA without leaving the results page.</p>
-      <p>The homepage and “Shop Beers” page were redesigned to promote popular products and introduce sort/filter functionality.</p>
+      <h2>PDPs to be presented as micro-PDPs that 'pop-out' when a product is selected from the PLP.</h2>
+      <p>Richer product details, quantity selection functionality, and an add-to-basket call-to-action (CTA) without leaving the PLP.</p>
+      <p>The homepage and “Shop Beers” page were redesigned to promote the most popular products and to implement sorting/filtering functionality.</p>
       <img class="u-max-full-width" src="./images/sobersauceRedesignSketches.png" alt="Sketches">
     </div>
   </div>
@@ -173,22 +150,12 @@
 
   <hr>
 
-<!-- Iteration -->
-<div class="row">
-    <div class="twelve columns">
-        <h3>Iteration</h3>
-        <p>Based on testing, checkout steps were reduced, product cards redesigned, navigation simplified, and visual hierarchy improved.</p>
-    </div>
-    </div>
-
-    <hr>
-
     <!-- Usability Testing -->
     <div class="row">
         <div class="twelve columns">
           <h3>Usability Testing</h3>
           <h2>Users stopped reporting feelings of confusion when finding products or checking out.</h2>
-          <p>Think‑aloud testing showed users instinctively used search and filter functions. Feedback requested auto‑complete search due to creative drink naming.</p>
+          <p>Think‑aloud protocol during moderated usability testing showed users instinctively used the new search and filter functions. Users requested auto‑complete functionality search due to the creative naming of craft beers.</p>
         </div>
       </div>
     
@@ -207,6 +174,8 @@
   <div class="row">
     <div class="twelve columns">
       <h3>Prototype</h3>
+      <h2>Adobe XD was used for building a high-fidelity prototype.</h2>
+      <p>Adobe XD was chosen for its compatability with the Adobe Create Cloud Suite. Artefacts created in Adobe Protoshop and Illustrator could be efficiently pipelined into the Adobe XD Prototype. The Development Team, who used Adobe Dreamweaver as their IDE were also invited as collaborators to the Adobe XD document.</p>
       <img class="u-max-full-width" src="./images/soberSauceXDPrototype.png" alt="XD Prototype">
     </div>
   </div>
@@ -215,14 +184,20 @@
 
   <!-- Outcome -->
   <div class="row">
-    <div class="twelve columns">
-      <h3>Outcome</h3>
-      <ul>
-        <li>Reduced checkout time</li>
-        <li>Improved product discoverability</li>
-        <li>Higher user satisfaction</li>
-        <li>Elimination of confusion during key tasks</li>
-      </ul>
+    <div class="twelve columns"></h3>
+      <p class="lead">Homepage and 'Shop Beers'</p>
+      <li>A new 'Trending Beers' section on the homepage provides quick access to the most-popular products.</li>                       </li>
+      <li>Searchability improved by including ‘auto-complete’ search functionality.</li>
+      <li>‘Sort’ and ‘Filter’ drop-down menus make use of product categorisation and product properties.</li>
+      <li>Branding guidelines required minimal tweaks to remain in line with WCAG-AA guidelines. Background colour contrast and text size were the main factors.</li>
+      <p></p>
+      <p class="lead">PLP and PDP</p>
+      <li>Pop-out PDPs provide glanceable product information without requiring navigation from the PLP.</li>
+      <li>Branding guidelines further amended to maintain compliance with WCAG-AA guidelines.</li>
+      <p></p>
+      <p class="lead">Review, Payment, and Delivery Screens</p>
+      <li>Unnecessary navigation steps removed</li>
+      <li>Input fields are grouped to reduce the need for data entry duplication.</li>
       <img class="u-max-full-width" src="./images/Sobersauce-final-design-images.jpg">
     </div>
   </div>
@@ -232,8 +207,8 @@
   <!-- Reflection -->
   <div class="row">
     <div class="twelve columns">
-      <h3>Reflection</h3>
-      <p>This project demonstrated how structural clarity, simplified flows, and contextual information can significantly improve user experience in product discovery.
+      <h3>Reflection and Lessons Learned</h3>
+      <p>The amount of product pages and checkout steps can increase the user's cognitive load, ultimately leading to frustration and irritation. Users may instinctively look for search functionalities rather than browsing product categories - they expect these functionalities, perhaps due to established design patterns. Pop-out PDPs were an experimental suggestion that was received well in testing. </p>
 
     <!-- Return to Top -->
     <hr style="width: 50%; margin: 3rem auto;">
