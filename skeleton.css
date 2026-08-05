@@ -498,17 +498,18 @@ form {
 
   /* menu becomes dropdown below navbar */
   .nav-links {
-    display: block;
-    max-height: 0;
-    overflow: hidden;
-    transition: max-height 0.3s ease;
+    display: none;
     flex-direction: column;
     gap: 10px;
-    margin-top: 10px;
+    margin: 0;
+    padding: 0;
   }
 
   .nav-links.show {
     max-height: 300px;
+    display: block;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
   }
 
   .nav-links li {
@@ -532,11 +533,8 @@ form {
     max-height: 300px;
     opacity: 1;
     transform: translateY(0);
+    border-bottom: 1px solid #eee;
   }
-}
-
-.nav-links li {
-  border-bottom: 1px solid #eee;
 }
 
 .hamburger {
@@ -626,7 +624,7 @@ form {
 
 .journey-scroll img {
   max-width: none;
-  max-width: 100%;
+  max-width: 100%; /* your diagram width */
   cursor: zoom-in;
 }
 
