@@ -532,7 +532,6 @@ form {
     max-height: 300px;
     opacity: 1;
     transform: translateY(0);
-    justify-content: center;
   }
 }
 
