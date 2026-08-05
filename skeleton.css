@@ -43,14 +43,14 @@
   box-sizing: border-box; }
 
 /* For devices larger than 400px */
-@media (min-width: 600px) {
+@media (min-width: 768px) {
   .container {
     width: 85%;
     padding: 0; }
 }
 
 /* For devices larger than 550px */
-@media (min-width: 850px) {
+@media (min-width: 768px) {
   .container {
     width: 80%; }
   .column,
@@ -401,7 +401,7 @@ form {
   max-width: 100%;
 }
 
-@media (max-width: 849px) {
+@media (max-width: 768px) {
   .responsiveHomepagePhoto {
     max-width: 100%;
     display: none;
@@ -432,7 +432,6 @@ form {
   line-height: 1.35;
   letter-spacing: -.08rem;
   font-weight: bold; 
-  /* font-weight: 600; */
   margin: 0;
   color: #222;
 }
@@ -450,17 +449,17 @@ form {
 }
 
 /* Mobile adjustments */
-@media (max-width: 600px) {
+@media (max-width: 768px) {
   .site-header {
     padding: 1rem 1.2rem;
   }
 
   .site-title {
-    font-size: 1.2rem;
+    font-size: 1.6rem;
   }
 
   .site-tagline {
-    font-size: 0.9rem;
+    font-size: 1rem;
   }
 }
 
@@ -478,6 +477,7 @@ form {
 .nav-links {
   list-style: none;
   display: flex;
+  justify-content: center;
   gap: 20px;
 }
 
@@ -532,6 +532,7 @@ form {
     max-height: 300px;
     opacity: 1;
     transform: translateY(0);
+    justify-content: center;
   }
 }
 
@@ -557,10 +558,10 @@ form {
 }
 
 .hamburger span {
-  display: block;            /* ← critical */
-  width: 100%;               /* ← critical */
-  height: 3px;               /* ← critical */
-  background: #0077cc;       /* your accent colour */
+  display: block;          
+  width: 100%;              
+  height: 3px;             
+  background: #0077cc;      
   position: absolute;
   left: 0;
   transition: all 0.3s ease;
