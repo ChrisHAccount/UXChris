@@ -802,6 +802,14 @@ hr {
 }
 
 
+/* Task Flow Diagrams
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.centered-image {
+  display: block;
+  margin: 0 auto;
+}
+
+
 /* Youtube Video Responsive Resizing
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
