@@ -1,5 +1,7 @@
-Hi, I'm Chris, and I'm a PhD Candidate at the University of Winchester. I’m researching how eCommerce retailers can accommodate consumers’ need to touch products before purchasing them.
+Hi, I'm Chris — a UX Researcher & Designer focused on product discovery and human‑centred retail experiences.
 
-I've worked in education for 15 years, teaching college and university students photography, fine arts, and media. I'm currently lecturing on Digital Media and Human-Computer Interaction.
+I study how customers make decisions online and how PDPs can replace the confidence people gain through touch.
 
-This page allows me to gather a portfolio, demonstrate UX and HCI projects, and record published research. Please take a look, and feel free to email me with any questions.
+I'm completing a PhD on tactile decision-making in e-commerce at the University of Winchester. Before moving into UX, I spent 17 years teaching photography, media, web design, and analytics - experience that shaped my ability to communicate clearly, understand user behaviour, and design with purpose.
+
+This portfolio highlights my UX research and design practice.
