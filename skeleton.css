@@ -762,7 +762,7 @@ hr {
 
 @media (max-width: 768px) {
   .persona-card img {
-    max-width: 200px;
+    max-width: 100%;
     margin: 0 auto;
     display: block;
   }
