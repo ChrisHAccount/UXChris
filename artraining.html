@@ -1,413 +1,459 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="utf-8">
-  <title>AR Training - UX Case Study</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link rel="stylesheet" href="normalize.css">
-  <link rel="stylesheet" href="skeleton.css">
+<head>
+    <meta charset="utf-8">
+    <title>AR Training - UX Case Study</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="stylesheet" href="normalize.css">
+    <link rel="stylesheet" href="skeleton.css">
 </head>
 
 <body>
-<div class="container" style="margin-top: 1%">
+    <div class="container" style="margin-top: 1%">
 
-<!-- HEADER AND NAV -->
-<header class="site-header">
-    <div class="header-inner">
-  
-      <div class="header-top">
-        <h1 class="site-title">Chris H - UX Researcher & Designer</h1>
-  
-        <button class="hamburger" id="hamburger">
-          <span></span>
-          <span></span>
-          <span></span>
-        </button>
-      </div>
-  
-      <p class="site-tagline">Product discovery · User research · Human-centred interaction</p>
-      </ul>
-  
-    </div>
-  </header>
-  
-  <ul class="nav-links" id="nav-links">
-    <li><a href="index.html">Home</a></li>
-    <li><a href="sobersauce.html">Sobersauce</a></li>
-    <li><a href="artraining.html">AR Training Solution</a></li>
-    <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-94168-9_33">Recent Research Publication ↗︎</a></li>
-  </ul>
+        <!-- HEADER AND NAV -->
+        <header class="site-header">
+            <div class="header-inner">
 
-  <!-- Hero -->
-  <div class="row">
-    <div class="twelve columns">
-      <h1>An Augmented Reality Training Solution for University of Winchester</h1>
-      <p class="lead">Reducing staff workload and improving student access to camera training through augmented reality simulation. This case study was based upon a live-brief and submitted as part of a masters degree.</p>
-      <img class="u-max-full-width" src="./images/AR-1-hero-image.jpg" alt="AR Training Header Image">
-    </div>
-  </div>
+                <div class="header-top">
+                    <h1 class="site-title">Chris H - UX Researcher & Designer</h1>
 
-  <hr>
+                    <button class="hamburger" id="hamburger">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
 
-  <!-- Overview -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Overview</h3>
-      <p>The University of Winchester's Multimedia Centre faces high demand for equipment training, creating long wait times and pressure on technical staff. I designed an augmented-reality mobile solution to support self-guided learning and reduce reliance on in-person sessions. Using mixed-methods research, analysing loan data and running focus groups, I developed student personas to assess technology acceptance and shape the design. Accessibility needs informed features such as a Freeze Frame mode for clearer AR guidance. The prototype secured funding for supporting hardware and enabled further exploration of a VR-based training system.</p>
-    </div>
-  </div>
+                <p class="site-tagline">Product discovery · User research · Human-centred interaction</p>
+                </ul>
 
-  <hr>
-
-  <!-- Problem -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Problem</h3>
-      <h2>A reliance on in-person training for professional camera equipment has resulted in long wait times due to high staff workloads.</h2>
-      <p>Without prior training, students cannot access camera loans to complete their assignments.</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- Proposed Solution -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Initial Hypothesis</h3>
-      <p class="lead">Delivering selected training sessions via an augmented-reality mobile application will decrease technician workload during peak demand periods.</p>
-      <p>The solution would need to:</p>
-      <ul>
-        <li>Be operated by students without the presence of a technician</li>
-        <li>Enable asynchronous training</li>
-        <li>Include accessibility features that promote equity</li>
-      </ul>
-      <p>The Multimedia Centre staff have requested a proof-of-concept, which may secure further funding into this project.</p>
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- Research -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Quantitative Research</h3>
-      <h2>Descriptive data analysis revealed spiking patterns in camera, supporting the concerns about capacity issues.</h2>
-      <p>The University did not record training-booking data, but camera-loan patterns showed clear seasonal spikes aligned with term dates. From these trends, it was possible to infer periods of increased training demand and reduced equipment availability for training sessions.</p>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="six columns">
-      <ul>
-        <li>Camera loans increase suddenly and steeply between September-October and January-February.</li>
-        <li>Training demand likely occurs before these spikes, with the reported 'bottleneck' causing the sudden spike phenomenon.</li>
-        <li>Equipment availability for training could be reduced during spikes in camera loans.</li>
-      </ul>
-      <p class="lead">Refined hypothesis:</p><p>If training can be delivered via an AR mobile application, then pressure on staff during peak periods will decrease and camera-loan spikes will be reduced</p>
-    </div>
-    <div class="six columns">
-      <img class="u-max-full-width" src="./images/AR-2-camera-booking-graph.png" alt="Camera Loan Graph">
-    </div>
-  </div>
-
-  <hr>
-
-  <!-- Insights -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Qualitative Research</h3>
-      <h2>Focus groups highlighted several potential benefits of using a simulation for training.</h2>
-      <p>Focus groups with technicians and training staff identified pain points across the entire training process. These were synthesised into an affinity diagram.</p>
-
-      <div class="insights-table">
-        <div class="insights-column">
-          <h5>Pre-Training Administration</h5>
-          <ul>
-            <li>Lack of online learning resources</li>
-            <li>1:1 training inefficient with large cohorts</li>
-            <li>Admin for training requests is time-consuming</li>
-            <li>Timetabled sessions clash with lectures</li>
-          </ul>
-        </div>
-      
-        <div class="insights-column">
-          <h5>Preparing for Training</h5>
-          <ul>
-            <li>Training preparation is time-consuming</li>
-            <li>Preparation wasted due to non-attendance</li>
-            <li>Slow student responses reduce equipment availability</li>
-          </ul>
-        </div>
-      
-        <div class="insights-column">
-          <h5>The Training Session</h5>
-          <ul>
-            <li>Students sometimes passive</li>
-            <li>Difficult to demonstrate some equipment</li>
-            <li>Students not always happy to attend in-person</li>
-            <li>Training takes resources away from projects</li>
-          </ul>
-        </div>
-      
-        <div class="insights-column">
-          <h5>Assessment</h5>
-          <ul>
-            <li>Paper forms present GDPR concerns</li>
-            <li>Paper forms not always appropriate</li>
-            <li>Students feel pressured to sign forms</li>
-            <li>Assessment can feel awkward</li>
-          </ul>
-        </div>
-      
-        <div class="insights-column">
-          <h5>Post-Training</h5>
-          <ul>
-            <li>Time consuming</li>
-            <li>Inefficient filing system</li>
-            <li>No revision materials available</li>
-          </ul>
-        </div>
-        </div>
-      </div>
-      </div>
-<p></p>
-      <h4>Key opportunities:</h4>
-      <ul>
-        <li>Asynchronous training could provide flexibility for students and remove 'awkward' feelings.</li>
-        <li>Simulation removes set-up and pack-down time for technicians.</li>
-        <li>Technician administrative duties could be reduced through automated assessment.</li>
-        <li>AR could offer a safer method to demonstrate “what happens when things go wrong.”</li>
-        <li>An AR solution could digitise previously paper-based forms, removing a data-protection concern.</li>
-      </ul>
-
-  <hr>
-
-  <!-- Personas -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Personas</h3>
-      <h2>Four student personas identified variance in engagement, confidence, knowledge, and attitude levels.</h2>
-      <p>Focus group data produced four student personas. Several persona-informed situations were devised to pre-test technology acceptance. Each of these situations would be considered during the ideation and testing processes.</p>
-    </div>
-  </div>
-
-  <div class="row">
-        <div class="persona-grid">
-            <div class="persona-card">
-              <img src="./images/AR-persona-1-jack.jpg" alt="Jack persona">
-              <h5>Jack</h5>
-              <p>Proactive, meticulous, expects high-quality training.</p>
             </div>
-          
-            <div class="persona-card">
-              <img src="./images/AR-persona-2-tom.jpg" alt="Tom persona">
-              <h5>Tom</h5>
-              <p>Practical, collaborative, prefers clarity and online research.</p>
+        </header>
+
+        <ul class="nav-links" id="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="sobersauce.html">Sobersauce</a></li>
+            <li><a href="artraining.html">AR Training Solution</a></li>
+            <li><a href="https://link.springer.com/chapter/10.1007/978-3-031-94168-9_33">Recent Research Publication
+                    ↗︎</a></li>
+        </ul>
+
+        <!-- Hero -->
+        <div class="row">
+            <div class="twelve columns">
+                <h1>An Augmented Reality Training Solution for University of Winchester</h1>
+                <p class="lead">Reducing staff workload and improving student access to camera training through
+                    augmented reality simulation. This case study was based upon a live-brief and submitted as part of a
+                    masters degree.</p>
+                <img class="u-max-full-width" src="./images/AR-1-hero-image.jpg" alt="AR Training Header Image">
             </div>
-          
-            <div class="persona-card">
-              <img src="./images/AR-persona-3-sam.jpg" alt="Sam persona">
-              <h5>Sam</h5>
-              <p>Finds equipment challenging, relies on peers, hesitant to ask staff.</p>
+        </div>
+
+        <hr>
+
+        <!-- Overview -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Overview</h3>
+                <p>The University of Winchester's Multimedia Centre faces high demand for equipment training, creating
+                    long wait times and pressure on technical staff. I designed an augmented-reality mobile solution to
+                    support self-guided learning and reduce reliance on in-person sessions. Using mixed-methods
+                    research, analysing loan data and running focus groups, I developed student personas to assess
+                    technology acceptance and shape the design. Accessibility needs informed features such as a Freeze
+                    Frame mode for clearer AR guidance. The prototype secured funding for supporting hardware and
+                    enabled further exploration of a VR-based training system.</p>
             </div>
-          
-            <div class="persona-card">
-              <img src="./images/AR-persona-4-marina.jpg" alt="Marina persona">
-              <h5>Marina</h5>
-              <p>Assertive, prefers individual training to overcome language barriers.</p>
+        </div>
+
+        <hr>
+
+        <!-- Problem -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Problem</h3>
+                <h2>A reliance on in-person training for professional camera equipment has resulted in long wait times
+                    due to high staff workloads.</h2>
+                <p>Without prior training, students cannot access camera loans to complete their assignments.</p>
             </div>
-          </div>          
-    </div>
+        </div>
 
-  <hr>
+        <hr>
 
-<!-- Content Audit -->
-<div class="row">
-    <div class="twelve columns">
-      <h3>Content Audit</h3>
-      <p>An audit of similar AR applications revealed several design patterns which enhanced their usability and accessibility.</p>
-  
-      <div class="audit-grid">
-        <img src="./images/ar_contentAudit1.png" alt="AR audit example 1">
-        <img src="./images/ar_contentAudit2.png" alt="AR audit example 2">
-        <img src="./images/ar_contentAudit3.png" alt="AR audit example 3">
-        <img src="./images/ar_contentAudit4.png" alt="AR audit example 4">
-      </div>
-  
-      <div>
-        <p class="lead">Findings</p>
-      <ul class="audit-points">
-        <li>An overlaid UI provided instruction and recognisable cues to access functionality, though translucent buttons limited vision-based accessibility.</li>
-        <li>Contextual prompts and visible tap targets demonstrated system status.</li>
-        <li>Navigation elements often mimicked the operating system, improving recognition and user control.</li>
-        <li>Drawers of placeable objects mirrored real-world equivalents, supporting behavioural expectations.</li>
-        <li>Error messages typically included instructions to help users recover from mistakes.</li>
-      </ul>
-    </div>
-    </div>
-  </div>
-  
+        <!-- Proposed Solution -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Initial Hypothesis</h3>
+                <p class="lead">Delivering selected training sessions via an augmented-reality mobile application will
+                    decrease technician workload during peak demand periods.</p>
+                <p>The solution would need to:</p>
+                <ul>
+                    <li>Be operated by students without the presence of a technician</li>
+                    <li>Enable asynchronous training</li>
+                    <li>Include accessibility features that promote equity</li>
+                </ul>
+                <p>The Multimedia Centre staff have requested a proof-of-concept, which may secure further funding into
+                    this project.</p>
+            </div>
+        </div>
 
-  <hr>
+        <hr>
 
-  <!-- Academic Research -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Secondary Research in Academic Journals</h3>
-      <h2>"Freeze Frame" functionality could increase accessibility for students experiencing motor or cognitive impairments.</h2>
-      <p>A pause-and-review feature was implemented to let users temporarily stop the AR sequence and inspect their device's display comfortably before continuing (Herskovitz et al., 2020). This is particularly beneficial for students with unstable gait, involuntary movements, or cognitive impairments.</p>
-      <img class="u-max-full-width" src="./images/ar_freezeDiagram1.png">
-    </div>
-  </div>
+        <!-- Research -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Quantitative Research</h3>
+                <h2>Descriptive data analysis revealed spiking patterns in camera, supporting the concerns about
+                    capacity issues.</h2>
+                <p>The University did not record training-booking data, but camera-loan patterns showed clear seasonal
+                    spikes aligned with term dates. From these trends, it was possible to infer periods of increased
+                    training demand and reduced equipment availability for training sessions.</p>
+            </div>
+        </div>
 
-  <hr>
+        <div class="row">
+            <div class="six columns">
+                <ul>
+                    <li>Camera loans increase suddenly and steeply between September-October and January-February.</li>
+                    <li>Training demand likely occurs before these spikes, with the reported 'bottleneck' causing the
+                        sudden spike phenomenon.</li>
+                    <li>Equipment availability for training could be reduced during spikes in camera loans.</li>
+                </ul>
+                <p class="lead">Refined hypothesis:</p>
+                <p>If training can be delivered via an AR mobile application, then pressure on staff during peak periods
+                    will decrease and camera-loan spikes will be reduced</p>
+            </div>
+            <div class="six columns">
+                <img class="u-max-full-width" src="./images/AR-2-camera-booking-graph.png" alt="Camera Loan Graph">
+            </div>
+        </div>
 
-  <!-- Task Flows -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Application Task Flows</h3>
-      <p>Two mandatory task flows formed the basis of design and testing.</p>
-      <p class="lead">Task Flow 1: Viewing Equipment in AR</p>
-      <img class="u-max-full-width centered-image" src="./images/ar_taskFlowDiagram1.png">
-      <p></p>
-      <p class="lead">Task Flow 2: Use of Freeze Frame Functionality</p>
-      <img class="u-max-full-width centered-image" src="./images/ar_taskFlowDiagram2.png">
-    </div>
-  </div>
+        <hr>
 
-  <hr>
+        <!-- Insights -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Qualitative Research</h3>
+                <h2>Focus groups highlighted several potential benefits of using a simulation for training.</h2>
+                <p>Focus groups with technicians and training staff identified pain points across the entire training
+                    process. These were synthesised into an affinity diagram.</p>
 
-  <!-- Ideation -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Ideation, Storyboarding & Sketching</h3>
-      <p>A range of progressively detailed sketches were developed in parallel with regular consultation with training staff and students.</p>
-      <img class="u-max-full-width" src="./images/ar_sketches1.png">
-    </div>
-  </div>
+                <div class="insights-table">
+                    <div class="insights-column">
+                        <h5>Pre-Training Administration</h5>
+                        <ul>
+                            <li>Lack of online learning resources</li>
+                            <li>1:1 training inefficient with large cohorts</li>
+                            <li>Admin for training requests is time-consuming</li>
+                            <li>Timetabled sessions clash with lectures</li>
+                        </ul>
+                    </div>
 
-  <hr>
+                    <div class="insights-column">
+                        <h5>Preparing for Training</h5>
+                        <ul>
+                            <li>Training preparation is time-consuming</li>
+                            <li>Preparation wasted due to non-attendance</li>
+                            <li>Slow student responses reduce equipment availability</li>
+                        </ul>
+                    </div>
 
-  <!-- Wireframes -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Wireframing & Interaction Design</h3>
-      <p>Wireframes explored navigation, object drawers, tab bars, and interaction behaviours.</p>
-    </div>
-  </div>
+                    <div class="insights-column">
+                        <h5>The Training Session</h5>
+                        <ul>
+                            <li>Students sometimes passive</li>
+                            <li>Difficult to demonstrate some equipment</li>
+                            <li>Students not always happy to attend in-person</li>
+                            <li>Training takes resources away from projects</li>
+                        </ul>
+                    </div>
 
-  <div class="row">
-    <div class="twelve columns"><img class="u-max-full-width" src="./images/ar_wireframes.png"></div>
-    <p></p>
-    <img class="u-max-full-width" src="./images/ar_rotationDiagram.png">
-  </div>
+                    <div class="insights-column">
+                        <h5>Assessment</h5>
+                        <ul>
+                            <li>Paper forms present GDPR concerns</li>
+                            <li>Paper forms not always appropriate</li>
+                            <li>Students feel pressured to sign forms</li>
+                            <li>Assessment can feel awkward</li>
+                        </ul>
+                    </div>
 
-  <hr>
+                    <div class="insights-column">
+                        <h5>Post-Training</h5>
+                        <ul>
+                            <li>Time consuming</li>
+                            <li>Inefficient filing system</li>
+                            <li>No revision materials available</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <p></p>
+        <h4>Key opportunities:</h4>
+        <ul>
+            <li>Asynchronous training could provide flexibility for students and remove 'awkward' feelings.</li>
+            <li>Simulation removes set-up and pack-down time for technicians.</li>
+            <li>Technician administrative duties could be reduced through automated assessment.</li>
+            <li>AR could offer a safer method to demonstrate “what happens when things go wrong.”</li>
+            <li>An AR solution could digitise previously paper-based forms, removing a data-protection concern.</li>
+        </ul>
 
-  <!-- Paper Prototype -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Paper Prototype Usability Testing</h3>
-      <h2>Test participants easily navigated using the tab bar, object drawers, and toggle switches.</h2>
-    </div>
-  </div>
+        <hr>
 
-  <div class="row">
-    <div class="six columns">
-      <img class="u-max-full-width" src="./images/arUsabilityTest1.png">
-    </div>
-    <div class="six columns">
-      <p>Moderated usability testing with think-aloud protocols identified misunderstandings to be addressed during further iterations:</p>
-      <ul>
-        <li>The 'target' is often mistaken for an object, likely due to the limitations of paper prototyping and drawing skills.</li>
-        <li>Users require repeated onboarding prompts to engage with the 'Freeze Frame' feature, indicating a need for clearer instructions</li>
-        <li>There's confusion about whether a Freeze Frame is saved within the app or to the device's camera roll. More distinct terminology like 'Save' versus 'Export' may remediate this.</li>
-      </ul>
-    </div>
-  </div>
+        <!-- Personas -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Personas</h3>
+                <h2>Four student personas identified variance in engagement, confidence, knowledge, and attitude levels.
+                </h2>
+                <p>Focus group data produced four student personas. Several persona-informed situations were devised to
+                    pre-test technology acceptance. Each of these situations would be considered during the ideation and
+                    testing processes.</p>
+            </div>
+        </div>
 
-  <hr>
+        <div class="row">
+            <div class="persona-grid">
+                <div class="persona-card">
+                    <img src="./images/AR-persona-1-jack.jpg" alt="Jack persona">
+                    <h5>Jack</h5>
+                    <p>Proactive, meticulous, expects high-quality training.</p>
+                </div>
 
-  <!-- Prototype Development -->
-  <h3>Medium Fidelity Prototyping</h3>
-  <p>Apple's ARKit features were used to create a 3D model of a camera and to build an AR experience. This was tested in one of the University's TV studios.</p>
-  <div class="video-wrapper">
-    <iframe 
-      src="https://www.youtube.com/embed/ygHyZcVUNWI?si=8mfA8CctjImimd-Y"
-      frameborder="0"
-      allowfullscreen>
-    </iframe>
-  </div>
-  
+                <div class="persona-card">
+                    <img src="./images/AR-persona-2-tom.jpg" alt="Tom persona">
+                    <h5>Tom</h5>
+                    <p>Practical, collaborative, prefers clarity and online research.</p>
+                </div>
 
-  <hr>
+                <div class="persona-card">
+                    <img src="./images/AR-persona-3-sam.jpg" alt="Sam persona">
+                    <h5>Sam</h5>
+                    <p>Finds equipment challenging, relies on peers, hesitant to ask staff.</p>
+                </div>
 
-  <!-- Outcome -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>High-Fidelity Design</h3>
-<p>The high-fidelity prototype was designed using Figma, with Apple's ARKit experience integrated and divided into three flows for demonstration purposes. Onboarding issues identified in usability testing were addressed using progressive onboarding - a series of written instructions that revealed information only when the user was ready. This design pattern is common across similar learning applications such as Duolingo.</p>
-<img class="u-max-full-width" src="./images/AR-XDPrototype.png">
-<p></p>      
-<h4>Functionality Highlights</h4>
-      <ul>
-        <li>Users can access asynchronous training solution without attending in-person, reducing demand on technicians and camera equipment.</li>
-        <li>Training demand can still be met when technician or camera equipment availability is low.</li>
-        <li>Design patterns leverage learnt user behaviours from similar AR applications, enhancing recognition and control</li>
-        <li>The “Freeze Frame” functionality allows users to pause the AR experience while they make observations in comfort.</li>
-      </ul>
+                <div class="persona-card">
+                    <img src="./images/AR-persona-4-marina.jpg" alt="Marina persona">
+                    <h5>Marina</h5>
+                    <p>Assertive, prefers individual training to overcome language barriers.</p>
+                </div>
+            </div>
+        </div>
 
-      <img class="u-max-full-width" src="./images/AR-final-design-images.jpg">
-    </div>
-  </div>
+        <hr>
 
-  <hr>
+        <!-- Content Audit -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Content Audit</h3>
+                <p>An audit of similar AR applications revealed several design patterns which enhanced their usability
+                    and accessibility.</p>
 
-  <div class="row">
-    <div class="twelve columns">
-      <h3>Lessons Learned</h3>
-<ul>
-      <li>Implementation of innovative features (i.e.: Freeze Frame functionality) may require additional guidance for users. Using existing design patterns can shortcut this to an extent.</li></p>
-    <li>Low-fidelity wireframes can cause confusion, particularly when users struggle to distinguish AR content from interface elements like toggles and buttons.</li>
-    </ul>
-    </div>
-</div>
-      <hr>
+                <div class="audit-grid">
+                    <img src="./images/ar_contentAudit1.png" alt="AR audit example 1">
+                    <img src="./images/ar_contentAudit2.png" alt="AR audit example 2">
+                    <img src="./images/ar_contentAudit3.png" alt="AR audit example 3">
+                    <img src="./images/ar_contentAudit4.png" alt="AR audit example 4">
+                </div>
 
-  <!-- References -->
-  <div class="row">
-    <div class="twelve columns">
-      <h3>References</h3>
-      <p>Herskovitz, J., Wu, J., White, S., Pavel, A., Reyes, G., Guo, A. and Bigham, J. (2020). Making Mobile Augmented Reality Applications Accessible. ASSETS '20.</p>
-      <p>WebAIM (2012). Motor Disabilities - Types of Motor Disabilities.</p>
-    </div>
-  </div>
+                <div>
+                    <p class="lead">Findings</p>
+                    <ul class="audit-points">
+                        <li>An overlaid UI provided instruction and recognisable cues to access functionality, though
+                            translucent buttons limited vision-based accessibility.</li>
+                        <li>Contextual prompts and visible tap targets demonstrated system status.</li>
+                        <li>Navigation elements often mimicked the operating system, improving recognition and user
+                            control.</li>
+                        <li>Drawers of placeable objects mirrored real-world equivalents, supporting behavioural
+                            expectations.</li>
+                        <li>Error messages typically included instructions to help users recover from mistakes.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
 
-  <hr>
 
-    <!-- Return to Top -->
-    <hr style="width: 50%; margin: 3rem auto;">
-    <div class="row" style="text-align: center;">
-      <div class="twelve columns">
-        <a href="#top" class="back-to-top">Back to top ↑</a>
-      </div>
-    </div>
+        <hr>
+
+        <!-- Academic Research -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Secondary Research in Academic Journals</h3>
+                <h2>"Freeze Frame" functionality could increase accessibility for students experiencing motor or
+                    cognitive impairments.</h2>
+                <p>A pause-and-review feature was implemented to let users temporarily stop the AR sequence and inspect
+                    their device's display comfortably before continuing (Herskovitz et al., 2020). This is particularly
+                    beneficial for students with unstable gait, involuntary movements, or cognitive impairments.</p>
+                <img class="u-max-full-width" src="./images/ar_freezeDiagram1.png">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Task Flows -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Application Task Flows</h3>
+                <p>Two mandatory task flows formed the basis of design and testing.</p>
+                <p class="lead">Task Flow 1: Viewing Equipment in AR</p>
+                <img class="u-max-full-width centered-image" src="./images/ar_taskFlowDiagram1.png">
+                <p></p>
+                <p class="lead">Task Flow 2: Use of Freeze Frame Functionality</p>
+                <img class="u-max-full-width centered-image" src="./images/ar_taskFlowDiagram2.png">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Ideation -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Ideation, Storyboarding & Sketching</h3>
+                <p>A range of progressively detailed sketches were developed in parallel with regular consultation with
+                    training staff and students.</p>
+                <img class="u-max-full-width" src="./images/ar_sketches1.png">
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Wireframes -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Wireframing & Interaction Design</h3>
+                <p>Wireframes explored navigation, object drawers, tab bars, and interaction behaviours.</p>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="twelve columns"><img class="u-max-full-width" src="./images/ar_wireframes.png"></div>
+            <p></p>
+            <img class="u-max-full-width" src="./images/ar_rotationDiagram.png">
+        </div>
+
+        <hr>
+
+        <!-- Paper Prototype -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Paper Prototype Usability Testing</h3>
+                <h2>Test participants easily navigated using the tab bar, object drawers, and toggle switches.</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="six columns">
+                <img class="u-max-full-width" src="./images/arUsabilityTest1.png">
+            </div>
+            <div class="six columns">
+                <p>Moderated usability testing with think-aloud protocols identified misunderstandings to be addressed
+                    during further iterations:</p>
+                <ul>
+                    <li>The 'target' is often mistaken for an object, likely due to the limitations of paper prototyping
+                        and drawing skills.</li>
+                    <li>Users require repeated onboarding prompts to engage with the 'Freeze Frame' feature, indicating
+                        a need for clearer instructions</li>
+                    <li>There's confusion about whether a Freeze Frame is saved within the app or to the device's camera
+                        roll. More distinct terminology like 'Save' versus 'Export' may remediate this.</li>
+                </ul>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Prototype Development -->
+        <h3>Medium Fidelity Prototyping</h3>
+        <p>Apple's ARKit features were used to create a 3D model of a camera and to build an AR experience. This was
+            tested in one of the University's TV studios.</p>
+        <div class="video-wrapper">
+            <iframe src="https://www.youtube.com/embed/ygHyZcVUNWI?si=8mfA8CctjImimd-Y" frameborder="0" allowfullscreen>
+            </iframe>
+        </div>
+
+
+        <hr>
+
+        <!-- Outcome -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>High-Fidelity Design</h3>
+                <p>The high-fidelity prototype was designed using Figma, with Apple's ARKit experience integrated and
+                    divided into three flows for demonstration purposes. Onboarding issues identified in usability
+                    testing were addressed using progressive onboarding - a series of written instructions that revealed
+                    information only when the user was ready. This design pattern is common across similar learning
+                    applications such as Duolingo.</p>
+                <img class="u-max-full-width" src="./images/AR-XDPrototype.png">
+                <p></p>
+                <h4>Functionality Highlights</h4>
+                <ul>
+                    <li>Users can access asynchronous training solution without attending in-person, reducing demand on
+                        technicians and camera equipment.</li>
+                    <li>Training demand can still be met when technician or camera equipment availability is low.</li>
+                    <li>Design patterns leverage learnt user behaviours from similar AR applications, enhancing
+                        recognition and control</li>
+                    <li>The “Freeze Frame” functionality allows users to pause the AR experience while they make
+                        observations in comfort.</li>
+                </ul>
+
+                <img class="u-max-full-width" src="./images/AR-final-design-images.jpg">
+            </div>
+        </div>
+
+        <hr>
+
+        <div class="row">
+            <div class="twelve columns">
+                <h3>Lessons Learned</h3>
+                <ul>
+                    <li>Implementation of innovative features (i.e.: Freeze Frame functionality) may require additional
+                        guidance for users. Using existing design patterns can shortcut this to an extent.</li>
+                    </p>
+                    <li>Low-fidelity wireframes can cause confusion, particularly when users struggle to distinguish AR
+                        content from interface elements like toggles and buttons.</li>
+                </ul>
+            </div>
+        </div>
+        <hr>
+
+        <!-- References -->
+        <div class="row">
+            <div class="twelve columns">
+                <h3>References</h3>
+                <p>Herskovitz, J., Wu, J., White, S., Pavel, A., Reyes, G., Guo, A. and Bigham, J. (2020). Making Mobile
+                    Augmented Reality Applications Accessible. ASSETS '20.</p>
+                <p>WebAIM (2012). Motor Disabilities - Types of Motor Disabilities.</p>
+            </div>
+        </div>
+
+        <hr>
+
+        <!-- Return to Top -->
+        <hr style="width: 50%; margin: 3rem auto;">
+        <div class="row" style="text-align: center;">
+            <div class="twelve columns">
+                <a href="#top" class="back-to-top">Back to top ↑</a>
+            </div>
+        </div>
     </div>
 
     <!-- Footer -->
-<div class="container" style="margin-top: 4rem; margin-bottom: 2rem;">
-    <hr style="width: 50%; margin: 2rem auto;">
-    <div class="row">
-      <div class="twelve columns" style="text-align: center; color: #666;">
-        <p>© 2026 Chris H — UX Research & Design</p>
-        <p>
-          <!-- <a href="mailto:your-email@example.com">Email</a>·  -->
-          <a href="https://www.linkedin.com/in/chrishelcoop/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a>
-        </p>
-      </div>
+    <div class="container" style="margin-top: 4rem; margin-bottom: 2rem;">
+        <hr style="width: 50%; margin: 2rem auto;">
+        <div class="row">
+            <div class="twelve columns" style="text-align: center; color: #666;">
+                <p>© 2026 Chris H — UX Research & Design</p>
+                <p>
+                    <!-- <a href="mailto:your-email@example.com">Email</a>·  -->
+                    <a href="https://www.linkedin.com/in/chrishelcoop/" target="_blank"
+                        rel="noopener noreferrer">LinkedIn ↗</a>
+                </p>
+            </div>
+        </div>
     </div>
-  </div>
-  <script src="js/navbar.js"></script>
-    </body>
-    </html>
+    <script src="js/navbar.js"></script>
+</body>
+
+</html>
