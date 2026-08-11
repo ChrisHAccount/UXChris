@@ -1,2 +1,2 @@
-# Ignore the drafts folder and all its contents:
-drafts/
+# Ignore the raw unencrypted draft file in root
+publishedstudy1raw.html
